@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Form </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <div class="form">
+                <fieldset>
+                    <legend >Registration Form</legend>
+                
+                
+                <form action="index.html" id="form" method="post" onsubmit= return validation()>
+                    <ul style="list-style-type: none;">
+                        <li><label for="fname">Username:</label></li>
+                        <li>  <input type="text" id="fname" name="fname" placeholder="Enter your First name "></li>
+                    </ul>
+                        
+                    <ul style="list-style-type: none;">
+                        <li><label for=""> Password:</label></li>
+                        <li>  <input type="password" id="pass" name="pass" placeholder="Enter your password"></li>
+                    </ul>
+                      
+
+
+                    <ul style="list-style-type: none;">
+                        <li><label for=""> Email id:</label></li>
+                        <li>  <input type="email" id="email" name="email" placeholder="Enter your email id"></li>
+                    </ul>
+
+                    <ul style="list-style-type: none;">
+                       <li> <label for="phone"> Phone number:</label></li>
+                       <li> <input type="tel" id="phone" name="phone" placeholder="Enter your phone number "></li>
+                    </ul>
+
+                    <ul style="list-style-type: none;">
+                       <li><label for="dob"> Date of Birth:</label></li> 
+                       <li> <input type="date" id="dob" name="dob" placeholder="Enter your date of birth"></li> 
+                    </ul>
+
+                    <ul style="list-style-type: none;">
+                        <label>Gender : </label>
+                       <li><input type="radio" name="gender" value="male" id="male">
+                       <label for="male">Male</label></li>
+                        <li><input type="radio" name="gender" value="female" id="female">
+                        <label for="female">Female </label></li>
+                    </ul>
+
+                    <ul style="list-style-type: none; font-size: medium; border-radius: 10px;" >Address:
+                       <li> <Textarea rows="10%" cols="30%"></Textarea> </li> 
+                    </ul>
+
+                    <ul style="list-style-type: none; font-size: medium"> Departnment :<br>
+                    <input type="checkbox" id="d1" name="d1" value="Design">
+                    <label for="d1"> Design </label><br>
+                    <input type="checkbox" id="d2" name="d2" value="Developnment">
+                    <label for="d2"> Developnment </label><br>
+                    <input type="checkbox" id="d3" name="d3" value="Testing">
+                    <label for="d3"> Testing</label>
+
+                        <br><br>
+                    <ul style="list-style-type: none;"> 
+                        <li><input type="submit" name="submit">
+                            <input type="reset" name="reset">
+                        </li>
+                    </ul>
+                    
+                       
+                </form>
+            </div>
+        </fieldset>
+    </body>
+</html>

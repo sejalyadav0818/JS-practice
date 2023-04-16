@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>   <!-- CSS  use https://getcssscan.com/css-buttons-examples-->
+    <style>
+        body
+        {
+                background-color:rgb(255, 255, 255) ;
+        } 
+       #fieldset {
+        background-color: #eeeeee;
+        }
+
+        legend {
+        background-color: gray;
+        color: white;
+        padding: 5px 10px;
+        }
+        #button {
+        background-color: #494545;
+        border: 0;
+        border-radius: .5rem;
+        box-sizing: border-box;
+        color: #cad2e2;
+        font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-size: .777rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        padding: .75rem 1rem;
+        text-align: center;
+        text-decoration: none #D1D5DB solid;
+        text-decoration-thickness: auto;
+        box-shadow: 0 1px 3px 0 rgba(255, 254, 254, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+
+        #button:hover {
+        background-color: rgb(249,250,251);
+        }
+
+        #button:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        }
+
+        #button:focus-visible {
+        box-shadow: none;
+        } 
+
+        #box {
+            display: flex;
+        }
+
+        #basic1 {
+            float: left;
+            background: rgb(255, 255, 255);
+            width: 50%;
+        }
+        #basic2 {
+
+            float: right;
+            background: rgb(255, 255, 255);
+            width: 50%;
+         }
+			#leftbox {
+				float:left;
+			
+				width:25%;
+				height:280px;
+			}
+			#middlebox{
+				float:left;
+				
+				width:50%;
+				height:280px;
+			}
+			#rightbox{
+				float:right;
+			
+				width:25%;
+				height:280px;
+			}
+
+            #filedset
+            {
+                display: flex;
+                border-radius: 2px;
+                border-width: 2px;
+                justify-content: space-between;
+            }
+           #fs1
+            {  float: left;
+            background: rgb(255, 255, 255);
+            width: 50%;
+
+
+            }
+            #fs1
+            {
+
+            float: right;
+            background: rgb(255, 255, 255);
+            width: 50%;
+
+            }   
+    </style>
+</head>
+<body>
+ <center><h1>Job Application Form</h1> </center>
+<fieldset>
+        <legend> Basic Detail</legend>
+        <div id="boxes">
+                <table id="basic1">
+                <tr>
+                    <td><label for="username">First Name :</label></td>
+                    <td><input type="text" id="fname" name="fname" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="desi">Designation :</label></td>
+                    <td><input type="text" id="desi" name="desi" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone"> Phone Number</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <p>Gender :</p>
+                    <td><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="css" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td> <label for="rs"> Relationship state </label></td>
+                    <td> <select id="rs">
+                            <option value="singal">singal</option>
+                            <option value="">#</option>
+                            
+                    </td>
+                    </select>
+                </tr>
+        </div>
+
+        </table>
+        <table id="basic2">
+            
+                
+                <tr>
+                    <td> <label for="username">Last Name :</label></td>
+                    <td> <input type="text" id="lname" name="lname" required></td>
+                </tr>
+
+                <tr>
+
+                    <td><label for="ad1">Address 1:</label></td>
+                    <td><input type="text" id="ad1" name="ad1" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="ad2">Address 2:</label>
+                    <td><input type="text" id="ad2" name="ad2" required>
+                </tr>
+
+                <tr>
+                    <td> <label for="city">city </label></td>
+                    <td> <input type="text" id="city" name="city" required></td>
+                </tr>
+
+                <tr>
+                    <td> <label for="state"> state </label></td>
+                    <td> <select id="ddm">
+                            <option value="gujarat">gujarat</option>
+                            <option value="gujarat">gujarat</option>
+                         
+                    </td>
+                    </select>
+                </tr>
+
+        
+                 <tr>
+                    <td> <label for="zipcode"> zip code </label></td>
+                    <td><input type="number" id="zc" name="zc" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="dob"> Date of Birth </label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+        </table>
+        
+		</div> 
+    </fieldset>
+
+<!-- for Education Detail -->
+    <fieldset>
+        <legend>Education Detail</legend><br>
+         <div id="eu_div1">
+           <input type="button"  id="button" value="Add" onclick="euadditem()">
+           <br><br>
+        </div>
+    </fieldset> 
+    <!-- for Work Experience -->
+   <fieldset>
+        <legend>Work Experience</legend> <br>
+            <div id="wed_div1">
+        <input type="button" id="button" name="add" value="weadd" onclick="wedadditem()"><br><br>
+        </div>
+    </fieldset> 
+
+   <!-- for  Language Known  -->
+<div id="filedset">
+        <fieldset id="fs2">
+                        <legend>Language Known </legend>
+                        <div>
+                            <label for="hindi"> Language : </label>
+                            <input type="text" id="hindi" name="hindi" value="hindi">
+                        
+                            <input type="checkbox" id="read" name="read" value="read">
+                            <label for="read"> read</label>
+                            
+                            <input type="checkbox" id="write" name="write" value="write">
+                            <label for="read"> write </label>
+                            
+                            <input type="checkbox" id="speak" name="speak" value="speak">
+                            <label for="speak"> speak</label>
+                        </div>
+
+                        <input type="button"  id="button" value="add" onclick="lkadditem()">
+        
+                 </fieldset> 
+              <br><br>
+            <fieldset id="fs1">
+                <legend>Technologies you know</legend>
+                                    <div>
+                                    <label for="php"> Technology name :  </label>
+                                    
+                                    <input type="text" id="php" name="php" value="php">
+                                
+                                    <input type="radio" id="b" name="tech" value="b">
+                                    <label for="b"> Beginer :</label>
+                                    
+                                    <input type="radio" id="m" name="tech" value="m">
+                                    <label for="m"> Mideator </label>
+                                    
+                                    <input type="radio" id="e" name="tech" value="e">
+                                    <label for="e"> Expert</label>
+                                    </div>
+                 <input type="button" id="button"  value="add" onclick="tadditem()">
+                                 
+                                
+       </fieldset>
+  </div>
+<!-- for Referance Contact -->
+    <fieldset>
+        <legend>Referance Contact</legend><br>
+
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" id="button"  required>
+        <label for="username">Contact:</label>
+        <input type="tel" id="contact" name="contact" id="button" required><br><br>
+    </fieldset>
+<!-- for Preferances -->
+    <fieldset>
+        <legend> Preferances</legend>
+			
+                            <div id = "leftbox">
+                                <label for="pl">Preferd location :</label>
+                                <select name="gujarat" id="gujarat" multiple>
+                                <option value="Surat">Surat</option>
+                                <option value="Kheda">Kheda</option>
+                                </select>
+                            </div>
+                            
+                            <div id = "middlebox">
+                                <label for="np"> Notice period</label>
+                                <input type="text" id="np" name="np" required><br>
+                                
+                                <label for="ectc">Expacted CTC</label>
+                                <input type="text" id="ectc" name="ectc" required><br>
+                            
+                            
+                                <label for="cctc">Current CTC :</label>
+                                <input type="text" id="ctct" name="ctc"  required><br>
+                            </div>
+                            
+                            <div id = "rightbox">
+                                <label for="dp"> Department </label>
+                                <select id="dps">
+                                        <option value="Development">Development</option>
+                                        <option value="des">Design</option>
+                                        <option value="mark">marketing</option>
+                                
+                                </select>
+                            </div>
+                        
+    </fieldset>
+
+    <button  id=" name="></button>
+</body>
+                <script src="scrpit.js">  </script> 
+</html>
