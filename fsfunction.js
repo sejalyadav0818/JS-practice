@@ -29,4 +29,42 @@ console.log(renamefile);// rename file name
  //const deletefile =fs.unlinkSync('read.txt');
  //console.log(deletefile);// delete file
 
+//maths Function 
+
+//it is built-in fucntion.
+//Math.roound  return nearest integer  
+ console.log(Math.round(4.5)); //5
+ console.log(Math.round(4.6)); //5
+ console.log(Math.round(4.4)); //4
+
+//Math.cill(x) returmn Rounded Up nearest Value
+console.log(Math.ceil(4.5)); //5
+console.log(Math.ceil(4.6)); //5
+console.log(Math.ceil(4.4)); //5
+
+
+//Math.floor(x) returmn Rounded Up nearest Value
+console.log(Math.floor(4.5)); //4
+console.log(Math.floor(4.6)); //4
+console.log(Math.floor(4.4)); //4
+
+
+
+//Math.trunc(x) integer 
+console.log(Math.trunc(4.5)); //4
+console.log(Math.trunc(4.6)); //4
+console.log(Math.trunc(4.4)); //4
+
+//Math.pow()
+console.log(Math.pow(4,2)); //16
+console.log(Math.pow(4,1)); //4
+console.log(Math.pow(6,2)); //64
+
+//retrun positive value 
+
+console.log(Math.abs(-4)); //4
+
+//
+
+
 
