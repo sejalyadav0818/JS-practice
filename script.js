@@ -17,8 +17,8 @@ console.log(a++);//postfix // 1
 
 //comparsion Operator 
 console.log(5 > 4); //true
-console.log("apple" > "pineapple"); //false Dictionary comparison, hence false. "a" is smaller than "p".
-console.log("2" > "12"); // true Again, dictionary comparison, first char "2" is greater than the first char "1".
+console.log("apple" > "pineapple"); //false Dictionary comparison or lexicographical comparsion, hence false. "a" is smaller than "p".
+console.log("2" > "12"); // true Again, dictionary comparison, first char "2" is greater than the first char "1". becouse  javascript does not consider the whole value of the string, only the first character.
 
 //foreach
 items = ["q", "f", "g", "h"];
@@ -39,14 +39,14 @@ for (let i = 0; i < array.length; i++) {
 //var and let can be reassign
 //const remain constant cannot change the value  , can't be use before declaration
 
-// KEYWORD    SCOPE  REDECLARATION  &   REASSIGNMENT      HOISTING
+// KEYWORD    SCOPE  REDECLARATION  & REASSIGNMENT      HOISTING
 // var        Global, Local yes & yes yes,            with default value
 // let        Global, Local, Block  no & yes  yes,    without default value
 // const     Global, Local, Block  no & no yes,       without default value
 
 
 //fucntion  naming https://javascript.info/function-basics
-//index of
+//index of : give use index of array or string
 let array11 = ["Hello", "GeeksforGeeks", "JavaScript"];
 console.log(array11.indexOf("GeeksforGeeks"));//0
 
